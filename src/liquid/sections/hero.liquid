@@ -1,0 +1,70 @@
+{% render 'hero'  with{
+    settings: section.settings,
+    id: section.id
+}%}
+
+{% schema %}
+    {
+        "name": "header",
+        "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Eat Today"
+        },
+        {
+            "type": "text",
+            "id": "subheading",
+            "label": "Sub-Heading",
+            "default": "Live another day"
+        },
+        {
+            "type": "textarea",
+            "id": "body",
+            "label": "Body Copy",
+            "default": "Hello there! This is my attempt to make a customized Shopify theme. So please bear with me and enjoy the ride"
+        },
+        {
+            "type": "url",
+            "id": "link_url1",
+            "label": "Link URL"
+        },
+        {
+            "type": "url",
+            "id": "link_url2",
+            "label": "Link URL"
+        },
+        {
+            "type": "text",
+            "id": "link_text1",
+            "label": "Link Text 1",
+            "default": "Click"
+        },
+        {
+            "type": "text",
+            "id": "link_text2",
+            "label": "Link Text 2",
+            "default": "Click"
+        },
+        {
+            "type": "image_picker",
+            "id": "small_image",
+            "label": "Small Image",
+            "info": "Dimensions: 991x991"
+        },
+        {
+            "type": "image_picker",
+            "id": "large_image",
+            "label": "Large Image"
+        }
+      ],
+      "presets": [
+      {
+          "name": "Hero",
+          "category": "Image w/ text"
+      }
+     ]
+    }
+
+{% endschema %}

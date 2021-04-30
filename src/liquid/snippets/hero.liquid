@@ -1,0 +1,39 @@
+{% comment %}
+Requires the following args-
+
+-settings
+-id
+{% endcomment %}
+
+<style>
+.hero--{{ id }} {
+    background-image: url({{ settings.small_image | img_url: 'master' }});
+}
+
+@media (min-width: 600px){
+ .hero--{{ id }} {
+    background-image: url({{ settings.small_image | img_url: '600x' }});
+}   
+}
+
+
+@media (min-width: 992px){
+ .hero--{{ id }} {
+    background-image: url({{ settings.large_image | img_url: 'master' }});
+}   
+}
+</style>
+
+
+<section class="hero hero--{{ id }}">
+    <div class="hero__overlay"></div>
+    <div class="hero__content"></div>
+        <h1 class="hero__heading">{{ settings.heading }}</h1>
+        <h3 class="hero__subheading">{{ settings.subheading }}</h3>
+        <p class="hero__copy">{{ settings.body }}</p>
+        <div class="hero__buttons">
+            <a href="{{ settings.link_url1 }}" class="hero__link link1"> {{ settings.link_text1 }}</a>
+            <a href="{{ settings.link_url2 }}" class="hero__link link2"> {{ settings.link_text2 }}</a>
+        </div>
+    </div>
+</section>
