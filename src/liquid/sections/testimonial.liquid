@@ -1,0 +1,73 @@
+<div id="textsection">
+    <div class="simpletext">
+      <div class="column aaa">
+            <h1> {{ section.settings.text-box1 }} </h1>
+            <h3> {{ section.settings.text1 }} </h3>
+        </div>
+        <div class="column bbb">
+            <h1> {{ section.settings.text-box2 }} </h1>
+            <h3> {{ section.settings.text2 }} </h3>
+        </div>
+        <div class="column ccc">
+            <h1> {{ section.settings.text-box3 }} </h1>
+            <h3> {{ section.settings.text3 }} </h3>
+        </div>
+    </div>
+  </div>
+ 
+
+{% schema %}
+{
+  "name": "Text Box",
+  "settings": [
+    {
+      "id": "text-box1",
+      "type": "text",
+      "label": "Heading",
+      "default": "Title"
+    },
+    {
+      "id": "text1",
+      "type": "richtext",
+      "label": "Add custom text below",
+      "default": "<p>Add your text here</p>"
+    },
+    {
+        "id": "text-box2",
+        "type": "text",
+        "label": "Heading",
+        "default": "Title"
+      },
+      {
+        "id": "text2",
+        "type": "richtext",
+        "label": "Add custom text below",
+        "default": "<p>Add your text here</p>"
+      },
+      {
+        "id": "text-box3",
+        "type": "text",
+        "label": "Heading",
+        "default": "Title"
+      },
+      {
+        "id": "text3",
+        "type": "richtext",
+        "label": "Add custom text below",
+        "default": "<p>Add your text here</p>"
+      }
+  ],
+  "presets": [
+    {
+        "name": "Welcome section Test",
+        "category": "ADVANCED LAYOUT"
+    }
+    ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

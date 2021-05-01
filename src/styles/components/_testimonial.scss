@@ -1,0 +1,15 @@
+.simpletext {
+  padding: 50px;
+  background-color: #aaa;
+}
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.simpletext:after {
+  content: "";
+  display: table;
+  clear: both;
+}
