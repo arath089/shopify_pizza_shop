@@ -1,0 +1,32 @@
+.footer__content {
+  background: rgb(31, 31, 31);
+  color: rgb(223, 223, 223);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.charges {
+  background: rgb(31, 31, 31);
+  color: rgb(223, 223, 223);
+  font-size: 1rem;
+  padding: 20px 0;
+}
+.timing {
+  font-size: 1.2rem;
+}
+.day-timings {
+  font-size: 12px;
+}
+.Location {
+  font-size: 1.2rem;
+}
+.loc1 {
+  font-size: 12px;
+  padding: 10px 0;
+}
+.loc2 {
+  padding: 10px 0 15px 0;
+  font-size: 12px;
+}
