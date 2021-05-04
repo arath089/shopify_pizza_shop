@@ -1,12 +1,36 @@
 .simpletext {
   padding: 50px;
-  background-color: #aaa;
+  background-color: rgb(201, 201, 201);
+  @media (max-width: 600px) {
+    padding: 15px;
+  }
 }
 .column {
   float: left;
   width: 33.33%;
+  color: rgb(31, 31, 31);
+  @media (max-width: 600px) {
+    padding: 5px;
+    font-size: 0.5rem;
+    width: 100%;
+  }
+  @media (min-width: 1500px) {
+    font-size: 1.7rem;
+  }
+}
+.bbb {
+  @media (max-width: 600px) {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
 }
 
+.ccc {
+  @media (max-width: 600px) {
+    margin-left: 50%;
+    margin-right: 50%;
+  }
+}
 /* Clear floats after the columns */
 .simpletext:after {
   content: "";

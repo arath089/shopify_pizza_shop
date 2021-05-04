@@ -1,0 +1,35 @@
+{% render 'Heading-right-image'  with{
+    settings: section.settings,
+    id: section.id
+}%}
+
+
+{% schema %}
+{
+    "name": "Heading-right-image",
+    "settings": [
+    {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+    },
+    {
+        "id": "heading",
+        "type": "text",
+        "label": "Heading",
+        "default": "Title"
+    },
+    {
+        "type": "url",
+        "id": "link_url",
+        "label": "Link URL"
+    }
+   ],
+   "presets": [
+      {
+          "name": "Heading with right image",
+          "category": "Image w/ text"
+      }
+     ]
+}
+{% endschema %}

@@ -3,13 +3,13 @@
   background-size: cover;
   color: white;
   height: 80vw;
-  padding: 10px 20px;
+  padding: 50px 20px;
   position: relative;
   width: 100%;
 
   @media (min-width: 992px) {
     height: 90vh;
-    padding: 10px 100px;
+    padding: 150px 100px;
   }
 }
 
@@ -32,7 +32,7 @@
   top: 0;
 
   @media (min-width: 1500px) {
-    height: 50%;
+    height: 40%;
   }
 }
 
@@ -88,20 +88,16 @@
   font-weight: 400;
   margin: 0 10px 0 10px;
 
-  padding: 15px 50px;
+  padding: 10px 25px;
   text-decoration: none;
   transition-duration: 250ms;
   transition-timing-function: ease-out;
 
-  &:hover {
-    padding: 20px 60px;
-    background-color: white;
-    color: orange;
-  }
   @media (min-width: 600px) {
-    margin-top: 0;
+    padding: 15px 50px;
   }
   @media (min-width: 1500px) {
-    margin-top: 0;
+    padding: 30px 90px;
+    font-size: 2rem;
   }
 }
