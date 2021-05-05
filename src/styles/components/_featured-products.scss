@@ -1,0 +1,29 @@
+.featured-products {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 0;
+}
+
+.featured-products__heading {
+  margin-bottom: 20px;
+}
+
+.featured-prodcuts__items {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  .product-tile {
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 35%;
+
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
