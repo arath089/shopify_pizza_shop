@@ -21,7 +21,7 @@
     <main>
       {% section 'header' %}
       {{ content_for_layout }}
-      {% section 'footer' %}
+      {% if template == 'index' %}{% section 'footer' %}{% endif %}
     </main>
 
     <script src="{{ 'theme.js' | asset_url }}"></script>

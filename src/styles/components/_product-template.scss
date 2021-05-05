@@ -1,0 +1,64 @@
+.product {
+}
+
+.product__main {
+  display: flex;
+  align-items: center;
+}
+
+.product__images {
+  flex-basis: 30%;
+  width: 50%;
+  height: 100%;
+}
+
+.product__image {
+}
+.product__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.product__details {
+  padding: 0 20px 20px 20px;
+}
+
+.product__info {
+}
+
+.product__title {
+  font-family: "Montez", cursive;
+  font-size: 3rem;
+}
+
+.product__description {
+  padding-top: 10px;
+}
+
+.product__size {
+  padding-left: 20px;
+}
+
+.size-options {
+  background-color: chocolate;
+  width: 100px;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 20px;
+}
+
+.product__variants {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+
+.cart__button {
+  background-color: chocolate;
+  width: 150px;
+  height: 60px;
+  border-radius: 20px;
+  font-family: "Montez", cursive;
+  font-size: 1.7rem;
+}

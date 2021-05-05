@@ -1,0 +1,28 @@
+.line-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.line-item__left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 10px 20px 5px;
+}
+.line-item__image-wrapper {
+}
+.line-item__image {
+  width: 150px;
+  height: 100px;
+}
+.line-item__details {
+  padding: 20px 50px;
+}
+.line-item__right {
+  padding: 20px;
+}
+.line-item__remove {
+  color: crimson;
+  font-size: 14px;
+}
